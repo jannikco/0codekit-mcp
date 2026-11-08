@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "status": "ready",
+  "verification": "mock-only",
+  "releaseEligible": true,
+  "maintainer": "jannikco",
+  "license": "MIT",
+  "sourceRevision": "593fed39bc2597dafe5e4253a73149c4520fddf47f03b41f6d12650d926b122e",
+  "evidence": [
+    "Source-backed provider setup metadata",
+    "Offline configuration and MCP protocol tests"
+  ],
+  "provenance": [
+    "https://prod.0codekit.com/openapi.json"
+  ],
+  "id": "0codekit-mcp",
+  "kind": "mcp-setup",
+  "product": "pipmcp",
+  "title": "0CodeKit MCP setup and connection checker",
+  "description": "Generate 0CodeKit MCP client configuration, inspect available tools and validate hosted endpoint access through PipMCP.",
+  "operationIds": [],
+  "appSlug": "0codekit",
+  "appName": "0CodeKit",
+  "providerDocs": "https://prod.0codekit.com/openapi.json",
+  "providerWebsite": "https://0codekit.com/",
+  "authentication": {
+    "type": "api_key_header",
+    "requiredCredentialFields": [
+      "api_key"
+    ],
+    "requiredHeaderNames": [],
+    "helpUrl": "https://docs.0codekit.com/main/api-keys/",
+    "tenantRequired": false,
+    "accountParameterNames": []
+  },
+  "attributionSlug": "github-0codekit-mcp"
+}
