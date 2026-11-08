@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "version": "1.0.0",
+  "product": "pipmcp",
+  "credential": "PIPMCP_API_KEY",
+  "skills": [
+    {
+      "name": "pipmcp-0codekit",
+      "description": "Connect AI agents to 0CodeKit using one PipMCP API key and actual hosted tool discovery."
+    }
+  ],
+  "files": {
+    "skills/pipmcp-0codekit/SKILL.md": "8de08164bbe503e4c8c1f356cae94b4b512b380c74c5cb263414242b82b48f02"
+  }
+}

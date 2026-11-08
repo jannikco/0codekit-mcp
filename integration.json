@@ -1,37 +1,60 @@
 {
   "schemaVersion": 1,
-  "status": "ready",
-  "verification": "mock-only",
-  "releaseEligible": true,
-  "maintainer": "jannikco",
-  "license": "MIT",
-  "sourceRevision": "593fed39bc2597dafe5e4253a73149c4520fddf47f03b41f6d12650d926b122e",
-  "evidence": [
-    "Source-backed provider setup metadata",
-    "Offline configuration and MCP protocol tests"
-  ],
-  "provenance": [
-    "https://prod.0codekit.com/openapi.json"
-  ],
   "id": "0codekit-mcp",
   "kind": "mcp-setup",
   "product": "pipmcp",
   "title": "0CodeKit MCP setup and connection checker",
-  "description": "Generate 0CodeKit MCP client configuration, inspect available tools and validate hosted endpoint access through PipMCP.",
+  "description": "Prepare 0CodeKit for AI workflows with a PipMCP setup doctor, authenticated discovery and coding-agent instructions.",
+  "status": "ready",
+  "verification": "mock-only",
+  "releaseEligible": false,
   "operationIds": [],
+  "maintainer": "jannikco",
+  "license": "MIT",
+  "attributionSlug": "github-0codekit-mcp",
+  "sourceRevision": "acead7ed7f0392277ed3ab1c1cc7ddc9976b99939cdb9698cb5d1dea427611f4",
+  "qualityVersion": 2,
+  "artifactType": "setup",
+  "evidence": [
+    "Gateway HTTP transport fixtures",
+    "Generated stdio wrapper discovery/call fixtures"
+  ],
+  "provenance": [
+    "https://prod.0codekit.com/openapi.json"
+  ],
+  "utility": {
+    "problem": "Prepare 0CodeKit and inspect your hosted setup",
+    "output": "Offline setup plan and authenticated discovery diagnostics"
+  },
   "appSlug": "0codekit",
   "appName": "0CodeKit",
-  "providerDocs": "https://prod.0codekit.com/openapi.json",
-  "providerWebsite": "https://0codekit.com/",
-  "authentication": {
-    "type": "api_key_header",
-    "requiredCredentialFields": [
-      "api_key"
-    ],
-    "requiredHeaderNames": [],
-    "helpUrl": "https://docs.0codekit.com/main/api-keys/",
-    "tenantRequired": false,
-    "accountParameterNames": []
-  },
-  "attributionSlug": "github-0codekit-mcp"
+  "maintenanceOnly": true,
+  "executionAuthority": "pipmcp-gateway",
+  "version": "1.0.0",
+  "agentReady": true,
+  "capabilityEvidence": {
+    "local": {
+      "level": "Tested",
+      "operations": [
+        {
+          "name": "gateway_transport",
+          "level": "Tested",
+          "method": "contract-fixture",
+          "evidenceRefs": [
+            "Generated gateway/stdio fixtures"
+          ]
+        }
+      ],
+      "evidenceRefs": [
+        "Generated gateway/stdio fixtures"
+      ],
+      "mode": "local"
+    },
+    "managed": {
+      "level": "Documented",
+      "operations": [],
+      "evidenceRefs": [],
+      "mode": "managed"
+    }
+  }
 }
